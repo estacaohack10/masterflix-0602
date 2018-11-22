@@ -30,7 +30,7 @@ header {
   height: 3px;
   background-color: black;
   border-radius: 10px;
-  margin: 3px 0;
+  margin: 3.75px 0;
   transition: 0.5s;
 }
 
@@ -39,7 +39,7 @@ header {
 }
 
 .menu-hamburguer.ativo .traco-1 {
-  transform: rotateZ(-90deg);
+  transform: rotateZ(-45deg);
 }
 
 .menu-hamburguer.ativo .traco-2 {
@@ -62,8 +62,8 @@ header {
   align-items: center;
   flex-direction: column;
   position: absolute;
-  width: 80%;
   height: 100%;
+  left: 20vw;
   right: 0;
   background-color: #fa4242;
   z-index: 1;
