@@ -31,6 +31,23 @@ header {
   background-color: black;
   border-radius: 10px;
   margin: 3px 0;
+  transition: 0.5s;
+}
+
+.traco-1, .traco-3 {
+  transform-origin: center right;
+}
+
+.menu-hamburguer.ativo .traco-1 {
+  transform: rotateZ(-90deg);
+}
+
+.menu-hamburguer.ativo .traco-2 {
+  opacity: 0;
+}
+
+.menu-hamburguer.ativo .traco-3 {
+  transform: rotateZ(45deg);
 }
 
 .filtros {
@@ -52,6 +69,10 @@ header {
   z-index: 1;
   transform: translateX(150%);
   transition: 0.5s;
+}
+
+.filtros.mobile.ativo {
+  transform: translateX(0);
 }
 
 .filtros p {
