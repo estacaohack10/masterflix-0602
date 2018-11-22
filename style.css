@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: sans-serif;
+  overflow:hidden;
 }
 
 header {
@@ -9,7 +10,7 @@ header {
   align-items: center;
   padding: 0 10px;
   background-color: #fa4242;
-  position: fixed;
+  position: relative;
   width: 100%;
   box-sizing: border-box;
   z-index: 2;
@@ -79,6 +80,14 @@ header {
   margin: 10px;
 }
 
+.banner {
+  height: 30vw;
+  background-image: url(img/banner.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 @media(min-width: 576px) {
   header {
     justify-content: space-between;
@@ -90,5 +99,9 @@ header {
 
   .filtros {
     display: flex;
+  }
+
+  .filtros.mobile {
+    display: none;
   }
 }
